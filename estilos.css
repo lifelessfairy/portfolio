@@ -1,0 +1,202 @@
+ /* estilo apresentação */
+        body {
+          background-color: #DDCC55;
+          font-family: Stoke, Lucida Bright, Liberation;
+          color: #000000;
+          font-size: 16px;
+        }
+		ul, ol {
+          line-height: 200%;
+        }
+		a:visited, a:link {
+          color: #222222;
+          text-decoration: none;
+        }
+        .ender {
+          float: right;
+          text-align: right;
+          line-height: 140%;
+          font-size: 14px;
+          font-family: Karla, Verdana, Ubuntu;
+        }
+        .imgLogo {
+          border-bottom: 3px solid #222222; 
+          margin-bottom: 6px;
+          padding-bottom: 15px;
+          float: left;
+        }
+        .apres {
+          text-align: center;
+          font-size: 16px;
+		}
+		header {
+          display: block;
+          margin-bottom: 1px;
+          overflow: hidden;
+        }
+        nav {
+          display: block;
+          width: 20%;
+          float: left;
+		}
+		nav ul {
+		  line-height: 230%;
+          margin-top: 40px;
+          color: #000000; 
+		  list-style-type: square;		  
+		}
+		section {
+          display: block;
+          width: 70%;
+          float: right;
+        }
+/* estilo planos */
+        .titulo {
+          text-align: center;
+        }
+        .listaPlano {
+          width: 300px;
+          color: #202020;
+          background-color: #EEEEBB;
+          font-size: 12px;
+          padding: 10px 10px 10px 30px;
+          border: 3px solid #202020;
+          margin: 0px auto 10px auto;
+          list-style-type: square;
+        }
+		.h4 {
+		  font-size: 14px;
+		  text-align: center;
+		}
+        .listaPlano ol {
+          color: #202020;
+          list-style-type: lower-alpha; 
+        }
+        .preço {
+          color: #CC0000;
+        }
+		.txtcentr {
+			text-align: center
+		}
+/* estilo equipamentos */
+		.tabEquip {
+		  border: 1px solid;
+		  border-collapse: separate;
+		  width: 510px;
+		  margin-bottom: 10px;
+		  font-size: 14px;
+		}
+		.tabEquip th {
+		  border: 1px solid;
+		  padding: 10px
+		}
+		.tabEquip td {
+		  border: 1px solid;
+		  padding: 10px;
+		  font-size: 12px;
+		  background-color: #EEEEBB;
+		}
+		.tabTitulo {
+		  background-color: #402020;
+		  color: #FFFFFF;
+		}
+		.tabSubTit {
+		  background-color: #802020;
+		  color: #FFFFFF;
+		}
+		.imgCel {
+		  width: 130px;
+		  height: 130px;
+		}
+		.imgCel img {
+		  width: 130px;
+		  height: 130px;
+		}
+        .tabLinkColor a:visited,
+        .tabLinkColor a:link {
+          color: #FFFFFF;
+        }
+        .tabLinkColor a:hover {
+          color: #FFEE88;
+        }
+		#descExe {
+		  width: 250px;
+		  height: 230px;
+		  text-align: justify;
+		  vertical-align: top;
+		}
+		#imgDes {
+		  width: 130px;
+		  height: 130px;
+		  background-color: #FFFFFF;
+		}
+/***************************************
+* Estilo Formulários
+*/
+.formul {
+ width: 400px;
+ color: #202020;
+ font-size: 12px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ margin: 0px auto 10px auto;
+ border: 3px solid #202020; 
+ background-color: #EEEEBB;
+}
+.fsPessoal {
+ width: 340px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.linhaNome {
+ height: 30px;
+ width: 340px;
+ padding-top: 8px;
+}
+.linhaDados {
+ width: 340px;
+ height: 130px;
+}
+.fsGenero {
+ float: right;
+ margin-top: 10px;
+ margin-right: 10px;
+}
+.fsCartao {
+ width: 280px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.inpNome {
+ width: 220px;
+}
+.ColDirMat {
+ float: right;
+}
+.ColEsqPes {
+ float: left;
+ width: 70px;
+ display: block;
+}
+.numDD { width:35px; }
+.numQD { width:50px; }
+.inpNCC { width: 130px; }
+.inpTelef { width: 90px; }
+.inpMat { width: 70px; }
+.inpVal { width: 50px; }
+.colLabCrd {
+ width: 270px;
+ height: 30px;
+ float: left;
+ text-align: left;
+}
+.colValTot {
+ float: left;
+ width: 220px;
+ display: block;
+ text-align: left;
+}
+.entDireita {
+ float: right;
+ margin-right: 20px;
+}

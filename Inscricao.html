@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Inscrição</title>
+      <link rel="stylesheet" type="text/css" href="estilos.css">
+	  <script src="JS_inscricao.js"></script>
+   </head>
+ <body>
+    <header>
+	 <table class="imgLogo">
+       <tr>
+        <td>
+	     <img src="Imagens/HalteresSeusHabitosTopo.png">
+	    </td>
+	   </tr>
+     </table>
+	 <address class="ender">
+      Estrada do Puxa Ferro, 12<br>
+      Tel: (21) 91234-5678<br>
+      <a href="mailto:contato@halterhabit.com.br">contato@halterhabit.com.br</a>
+     </address>
+    </header>
+    <nav>
+	 <ul>
+      <li><a href="Apresentacao.html"><b> Apresentação </b></a></li>
+      <li><a href="Planos.html"><b> Planos </b></a></li>
+      <li><a href="Equipamentos.html"><b> Equipamentos </b></a></li>
+      <li><a href="Inscricao.html"><b> Inscrição </b></a></li>
+     </ul>
+    </nav>
+    <section>
+        <h3 class="titulo">Inscrição</h3>
+        <form method="POST">
+            <div class="formul">
+                <fieldset class="fsPessoal">
+                 <legend> Dados Pessoais</legend>
+                    <div class="linhaNome">
+                    <label for="nome" class="ColEsqPes">Nome: </label>
+                        <input type="text" class="inpNome" id="nome" name="TxtNome">
+                    </div>
+                    <div class="linhaDados">
+                        <fieldset class="fsGenero">
+                         <legend> Genero</legend>
+                         <input type="radio" name="TglGenero" value="M"> Masculino<br/>
+                         <input type="radio" checked name="TglGenero" value="F">Feminino<br/>
+                         <input type="radio" name="TglGenero" value="O"> Outro<br/>
+                        </fieldset>
+                    <br/><label for="tel" class="ColEsqPes">Telefone: </label>
+                           <input type="tel" class="inpTelef" id="tel" name="TxtTelefone" oninput="validarNumero(this, 'fixo')" /><br/> 
+                    <br/><label for="cel" class="ColEsqPes">Celular: </label>
+                           <input type="tel" class="inpTelef" id="cel" name="TxtCelular" oninput="validarNumero(this, 'celular')" /><br/>
+                    <br/><label for="idade" class="ColEsqPes">Idade:</label>
+                           <input type="number" class="numDD" id="idade" name="TxtIdade" min="18" max="88" value="18" / ><br/>
+                    </div>
+                </fieldset>
+                <fieldset class="fsPessoal">
+                  <legend> Matrícula</legend>
+                    <div class="linhaNome">
+                        <label for="mat">Matrículado?
+                         <input type="checkbox" name="chkMatric" value="S" id="mat" /></label>
+                        <label for="mat" class="ColDirMat">Número:
+                         <input type="text" class="inpMat" id="matNum" name="TxtMatricula" /></label>
+                    </div>
+                    <div class="linhaNome">
+                        <label for="ativ">Atividade:
+                         <select id="atividade" onchange="calcularValor()">
+                          <option> ----- </option>
+                          <option>Academia</option>
+                          <option>Natação</option>
+                          <option>Combo</option></select> </label>
+                        <label for="plano" class="ColDirMat">Plano: 
+                         <select id="plano" onchange="calcularValor()">
+                          <option> ----- </option>
+                          <option>Anual</option>
+                          <option>Semestral</option>
+                          <option>Mensal</option></select> </label>
+                    </div>
+                <fieldset><legend> Cartão</legend>
+                        <label class="colLabCrd" >Bandeira:
+                         <label><input type="radio" name="RadBand" checked />Visa</label>
+                         <label><input type="radio" name="RadBand" />Master</label>
+                         <label><input type="radio" name="RadBand" />Elo</label>
+                         </label><br/>
+                         <label class="colLabCrd" for="mesVal">Validade:
+                           <input type="number" name="TxtMesVal" id="mesVal"  min="1" max="12" class="numDD" value="10" /> /
+                           <input type="number" name="TxtAnoVal" value="2024"  min="2023" max="2040" class="numQD" /></label><br/>
+                        <label class="colLabCrd" for="numCar">Número:
+                          <input type="text" name="TxtNumCard"  class="inpNCC" id="numCar"/></label><br/>
+                </fieldset>
+                    <div class="linhaNome">
+                           <input type="button" value="Matrícula+Plano" onclick="calcularValor()"> 
+                        <label for="TxtTotal" class="ColDirMat">Valor: R$
+                           <input type="text" name="TxtTotal" readonly id="TxtTotal" class="inpVal" /></label>
+                    </div>
+                </fieldset>
+             <p class="entDireita"> 
+               <input type="button" onclick="calcularValor()" value="Enviar" name="BtnEnviar">
+               <input type="reset" value="Limpar" name="BtnLimpar">
+             </p>
+             <br><br>
+            </div>
+        </form>
+    </section>
+ </body>
+</html>

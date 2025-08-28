@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Equipamentos</title>
+      <link rel="stylesheet" type="text/css" href="estilos.css">
+	  <script src="JS_equipamentos.js"></script>
+   </head>
+ <body>
+    <header>
+	  <table class="imgLogo">
+       <tr>
+        <td>
+	     <img src="Imagens/HalteresSeusHabitosTopo.png">
+	    </td>
+	   </tr>
+     </table>
+	 <address class="ender">
+      Estrada do Puxa Ferro, 12<br>
+      Tel: (21) 91234-5678<br>
+      <a href="mailto:contato@halterhabit.com.br">contato@halterhabit.com.br</a>
+     </address>
+    </header>
+    <nav>
+	 <ul>
+      <li><a href="Apresentacao.html"><b> Apresentação </b></a></li>
+      <li><a href="Planos.html"><b> Planos </b></a></li>
+      <li><a href="Equipamentos.html"><b> Equipamentos </b></a></li>
+      <li><a href="Inscricao.html"><b> Inscrição </b></a></li>
+     </ul>
+    </nav>
+    <section class="tabLinkColor">
+        <table class="tabEquip">
+            <tr class="tabTitulo">
+             <th colspan="3">Alguns de Nossos Equipamentos</th>
+            </tr>
+<!--primeira coluna-->
+            <tr>
+             <th class="tabSubTit"><a href="#" onclick="mostrarEquipamento(0)">Cadeira Extensora</a></th>
+             <td id="imgDes" class="imgCel" rowspan="3"><img src="Imagens/Vazio_360.png"></td> <!--célula da imagem do equipamento--> 
+             <td id="descExe" rowspan="3"></td> <!-- célula da descrição-->
+            </tr>
+<!--segunda coluna-->
+            <tr>
+             <th class="tabSubTit"><a href="#" onclick="mostrarEquipamento(1)">Supino Vertical</a></th>
+            </tr>
+<!--terceira coluna-->
+	        <tr>
+             <th class="tabSubTit"><a href="#" onclick="mostrarEquipamento(2)">Remada Baixa</a></th>
+            </tr>
+         </table>
+    </section>
+ </body>
+</html>
